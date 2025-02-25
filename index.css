@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
 }
 html{
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 
 .container{
@@ -19,7 +19,7 @@ html{
 .para-text{ font-size:30px;}
 nav{
     color:white;
-    background-color: transparent;
+    background-color: lightgray;
     text-align: right;
     padding: 10px;
     font-size: 30px;
@@ -27,7 +27,7 @@ nav{
 }
 nav a{
     height: 100%;
-    color: white;
+    color: black;
     display: flex;
     padding: 0 30px;
     text-decoration: none;
@@ -65,7 +65,7 @@ nav ul li{
     left:17%;
 }
 .container .dynamic-txt{
-    display: absolute;
+    
    
     
 }
@@ -85,8 +85,8 @@ nav ul li{
     text-shadow:20px 20px 20px;
     align-items: center;
     left:1%;*/
-    border: 20px solid ;
-    padding-bottom:0;
+   /* border: 20px solid ;*/
+    margin-top:1000px;
 
 }
 .head{
