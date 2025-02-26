@@ -1,3 +1,4 @@
+clear
 /* This changes the background-color of the HTML file*/
 *{
     margin:0;
@@ -7,7 +8,12 @@
     scroll-behavior: smooth;
 }
 html{
-    /*scroll-behavior: smooth;*/
+    margin:0;
+    padding:0;
+    font-family: sans-serif; /*keeping this here if i want to change : monospace*/
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 }
 
 .container{
@@ -56,18 +62,7 @@ nav ul li{
 
 
 
-.container .static-txt{
-    display: absolute;
-    width:170px;
-    left: auto;
-    text-align:center;
-    /*border: 20px solid ;*/
-    /*color:red;*/
-    font-size: 60px;
-    font-weight: 400;
-   
-    left:17%;
-}
+
 .container .dynamic-txt{
     
    
@@ -75,22 +70,15 @@ nav ul li{
 }
 /*.dynamic-txt{
     display: absolute;
-    background-image: url('./name-text.png');/*this is the text*/
-   /*  background-repeat:no-repeat;
-    background-size: 100%;
-    width: 70%;
+    width: 50%;
     height: 25%;
     text-align: center;
-    margin: 100;
-    Left: 17%;
-    */
     
-    /*scroll-margin-block: 200px;
+    Left: 17%;
     text-shadow:20px 20px 20px;
     align-items: center;
-    left:1%;*/
-   /* border: 20px solid ;*/
-    /*margin-top:1000px;*/
+    left:1%;
+    */
 
 }
 .head{
@@ -113,20 +101,19 @@ nav ul li{
     background-size: cover;
 }
 
-.typing-effect {
+/*.typing-effect {
   display: inline-block;
   animation: letters, blink 1s step-end alternate;
   animation-fill-mode: forwards;
-  white-space: normal;
+  white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   opacity: 0;
   font-family: monospace;
-  border:10px, solid , pink;
   animation-duration: 3s; 
-  animation-iteration-count: 2;
-
-  font-size: 75px;
+  animation-iteration-count: 1;
+  width:auto;
+  font-size: 40px;
 }
 
 @keyframes letters {
@@ -135,14 +122,14 @@ nav ul li{
     opacity: 1;
   }
   99% {
-    border-color: #fff;/*888*/
+    border-color: #fff;/*888
   }
   100% {
     opacity: 1;
     border-color: transparent;
   }
 }
-
+*/
 
 .slides2 footer{
     width: 100%;
