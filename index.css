@@ -1,4 +1,4 @@
-clear
+
 /* This changes the background-color of the HTML file*/
 *{
     margin:0;
@@ -6,15 +6,13 @@ clear
     font-family: sans-serif; /*keeping this here if i want to change : monospace*/
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 html{
-    margin:0;
-    padding:0;
-    font-family: sans-serif; /*keeping this here if i want to change : monospace*/
-    box-sizing: border-box;
+    
     scroll-behavior: smooth;
 }
-}
+
 
 .container{
     width: 100%;
@@ -22,7 +20,9 @@ html{
     position: relative;
 
 }
+
 .para-text{ font-size:30px;}
+
 nav{
     color:white;
     background-color: lightgray;
@@ -101,7 +101,7 @@ nav ul li{
     background-size: cover;
 }
 
-/*.typing-effect {
+.typing-effect {
   display: inline-block;
   animation: letters, blink 1s step-end alternate;
   animation-fill-mode: forwards;
@@ -112,8 +112,15 @@ nav ul li{
   font-family: monospace;
   animation-duration: 3s; 
   animation-iteration-count: 1;
-  width:auto;
+  text-align: center;
   font-size: 40px;
+/*======================*/
+  animation-delay: 0s; 
+  animation-duration: 1.5s; 
+  width: 37ch; 
+  animation-timing-function: steps(25);
+
+
 }
 
 @keyframes letters {
@@ -122,28 +129,63 @@ nav ul li{
     opacity: 1;
   }
   99% {
-    border-color: #fff;/*888
+    border-color: #fff;/*888*/
   }
   100% {
     opacity: 1;
     border-color: transparent;
   }
 }
-*/
+
 
 .slides2 footer{
-    width: 100%;
-    height: 15vh;    
+    
+       
     padding:50px;   
-    gap:10px;
+    
     color:#fff;
     background-image: url('./files/grey-wallpaper.jpg');
     background-size: cover;
-    background-repeat:no-repeat;
+    
     text-decoration:none;
 
 }
 
+
+.page-div{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    color:white;
+    
+    border:30px,solid pink;
+
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url('./files/grey-wallpaper.png');
+}
+
+.box1{
+    background-color:darkred;
+    position: absolute;
+    top:85px;
+    left:30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.box2{
+    background-color:blueviolet;
+    position: absolute;
+    top:0;
+    left:0;
+    width: fit-content;
+    height: fit-content;
+}
 p a{
     height: 100%;
     color: white;
@@ -151,13 +193,14 @@ p a{
     
     text-decoration: none;
     
-    
+ /*   
 .table{
     padding: 50px;
 }
 td{
     padding:10px
 }
+*/
 
 /*
 .slides3{
@@ -191,12 +234,12 @@ td{
     background-repeat:no-repeat
 }
     */
-.form{
+/*.form{
     color: white;
     text-decoration: none;
 }
 
-
+*/
 @media(max-width: 1000px) {
     
     .container div {
