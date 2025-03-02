@@ -1,0 +1,32 @@
+.typing-effect {
+  display: inline-block;
+  animation: letters 3s steps(30) forwards, blink 0.75s step-end infinite;
+  animation-fill-mode: forwards;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
+  border-right: 3px solid #fff; /* This creates the cursor effect */
+  font-family: monospace;
+  font-size: 75px;
+  opacity: 0;
+}
+
+@keyframes letters {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    border-color: transparent; /* Hide the cursor when typing is done */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #fff;
+  }
+}
